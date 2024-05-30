@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <main>
+        <form id="formulario">
+            <h1>Formulário</h1>
+            <fieldset id="dados-pessoais">
+                <legend>Dados Pessoais</legend>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+                <div>
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" name="endereco" id="endereco" required>
+                </div>
+                <div>
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" name="cidade" id="cidade" required>
+                </div>
+                <div>
+                    <label for="estado">Estado:</label>
+                    <select name="estado" id="estado" required>
+                        <option value="">Selecione</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SC">Santa Catarina</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados Profissionais</legend>
+                <p>Natureza do Cargo</p>
+
+                <div>
+                    <input type="radio" name="gerencia" id="gerencia" checked>
+                    <label for="gerencia">Gerência</label>
+                    <input type="radio" name="gerencia" id="financeiro">
+                    <label for="financeiro">Financeiro</label>
+                    <input type="radio" name="gerencia" id="recepcao">
+                    <label for="recepcao">Recepção</label>
+                    <input type="radio" name="gerencia" id="administrativo">
+                    <label for="administrativo">Administrativo</label>
+                    <input type="radio" name="gerencia" id="juridico">
+                    <label for="juridico">Juridico</label>
+                </div>
+
+            <!-- ---------------------------------------------------------------------------------------------------------- -->
+
+                <p>Área de interesse</p>
+
+                <div>
+                    <input type="checkbox" name="computacao" id="computacao">
+                    <label for="computacao">Computação</label>
+                    <input type="checkbox" name="biologia" id="biologia">
+                    <label for="biologia">Biologia</label>
+                    <input type="checkbox" name="meioAmbiente" id="meioAmbiente">
+                    <label for="meioAmbiente">Meio Ambiente</label>
+                    <input type="checkbox" name="engenharia" id="engenharia">
+                    <label for="engenharia">Engenharia</label>
+                    <input type="checkbox" name="historia" id="historia">
+                    <label for="historia">História</label>
+                </div>
+
+            <!-- ---------------------------------------------------------------------------------------------------------- -->
+                
+                <label for="minicurriculo">Mini-curriculo:</label>
+                <textarea name="minicurriculo" id="minicurriculo" placeholder="Digite um pouco aqui..."></textarea>
+
+            </fieldset>
+            <div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+    </main>
+    <script src="./js/indes.js"></script>
+</body>
+</html>
